@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 16:53:18 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 20:55:44 by yrigny           ###   ########.fr       */
+/*   Created: 2024/07/18 16:14:18 by yrigny            #+#    #+#             */
+/*   Updated: 2024/07/18 18:43:34 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
 # include <iostream>
+# include <cstdlib>
+# include <ctime>
 
-class	Animal {
+class Brain {
 
-	protected:
-
-		std::string	type;
+	private:
+	
+		std::string*	ideas;
 
 	public:
 
-		Animal();
-		Animal(const Animal& src);
-		Animal&	operator=(const Animal& src);
-		virtual	~Animal();
+		Brain();
+		Brain(const Brain& src);
+		Brain&	operator=(const Brain& src);
+		~Brain();
 
-		virtual void	makeSound() const;
-
-		void			setType(std::string type);
-		std::string		getType() const;
+		std::string&	randomIdea();
 };
 
 #endif

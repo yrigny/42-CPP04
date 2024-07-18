@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 16:53:18 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 20:55:44 by yrigny           ###   ########.fr       */
+/*   Created: 2024/07/18 12:45:45 by yrigny            #+#    #+#             */
+/*   Updated: 2024/07/18 19:56:15 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
-# include <iostream>
+#ifndef DOG_HPP
+# define DOG_HPP
+# define BLUE "\033[0;94m"
+# include "Animal.hpp"
+# include "Brain.hpp"
 
-class	Animal {
+class	Dog : public Animal {
 
-	protected:
+	private:
 
 		std::string	type;
+		Brain*		brain;
 
 	public:
 
-		Animal();
-		Animal(const Animal& src);
-		Animal&	operator=(const Animal& src);
-		virtual	~Animal();
+		Dog();
+		Dog(const Dog& src);
+		~Dog();
+		Dog&	operator=(const Dog& src);
 
-		virtual void	makeSound() const;
-
-		void			setType(std::string type);
-		std::string		getType() const;
+		void	makeSound() const;
+		void	thinkAloud() const;
 };
 
 #endif

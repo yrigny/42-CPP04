@@ -6,7 +6,7 @@
 #    By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/11 11:49:53 by yrigny            #+#    #+#              #
-#    Updated: 2024/07/18 20:07:56 by yrigny           ###   ########.fr        #
+#    Updated: 2024/07/18 20:08:59 by yrigny           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INCLUDE = Animal.hpp Dog.hpp Cat.hpp Brain.hpp
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = ex01
+NAME = ex02
 
 GREEN = \033[1;32m
 

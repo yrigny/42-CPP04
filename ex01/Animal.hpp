@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:53:18 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 18:56:48 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/18 20:55:08 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ class	Animal {
 		Animal&	operator=(const Animal& src);
 
 		virtual void	makeSound() const;
+
 		void			setType(std::string type);
 		std::string		getType() const;
 };
