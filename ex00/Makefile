@@ -6,7 +6,7 @@
 #    By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/11 11:49:53 by yrigny            #+#    #+#              #
-#    Updated: 2024/07/17 17:16:46 by yrigny           ###   ########.fr        #
+#    Updated: 2024/07/18 14:24:51 by yrigny           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
-INCLUDE = Animal.hpp Dog.hpp Cat.hpp
+INCLUDE = Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
 
 OBJ = $(SRC:.cpp=.o)
 
