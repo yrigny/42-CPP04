@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 12:53:47 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 20:40:40 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/19 18:56:15 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ Dog::Dog(const Dog& src) : Animal(src) {
 Dog&	Dog::operator=(const Dog& src) {
 	std::cout << BLUE "Dog" NONE " copy assignment operator called" << std::endl;
 	this->type = src.type;
-	if (this->brain)
+	if (this->brain) {
 		delete this->brain;
+		this->brain = NULL;
+	}
 	this->brain = new Brain(*src.brain);
 	return *this;
 }

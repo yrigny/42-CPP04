@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 13:41:40 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 20:40:45 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/19 18:56:54 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,11 @@ Cat::Cat(const Cat& src) : Animal(src) {
 
 Cat&	Cat::operator=(const Cat& src) {
 	std::cout << YELLOW "Cat" NONE " copy assignment operator called" << std::endl;
-	this->type = src.type;
-	this->brain = src.brain;
+	if (this->brain) {
+		delete this->brain;
+		this->brain = NULL;
+	}
+	this->brain = new Brain(*src.brain);
 	return *this;
 }
 
