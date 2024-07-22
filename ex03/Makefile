@@ -6,7 +6,7 @@
 #    By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/11 11:49:53 by yrigny            #+#    #+#              #
-#    Updated: 2024/07/19 17:37:08 by yrigny           ###   ########.fr        #
+#    Updated: 2024/07/22 18:29:24 by yrigny           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,10 @@ CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp AMateria.cpp Ice.cpp Cure.cpp \
-	Character.cpp MateriaSource.cpp
+SRC = main.cpp \
+	AMateria.cpp Ice.cpp Cure.cpp \
+	Character.cpp \
+	MateriaSource.cpp
 
 INCLUDE = AMateria.hpp Ice.hpp Cure.hpp \
 	Character.hpp ICharacter.hpp \
@@ -29,13 +31,15 @@ GREEN = \033[1;32m
 
 NONE = \033[0m
 
+QUIET = 0
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 $(OBJ): %.o: %.cpp $(INCLUDE)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -D QUIET=$(QUIET)
 
 clean:
 	rm -f $(OBJ)

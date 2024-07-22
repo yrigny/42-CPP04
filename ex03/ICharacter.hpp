@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 14:25:04 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/19 19:01:44 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 14:50:01 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class	ICharacter {
 		virtual void				equip(AMateria* m) = 0;
 		virtual void				unequip(int idx) = 0;
 		virtual void				use(int idx, ICharacter& target) = 0;
+		
 };
 
 #endif
