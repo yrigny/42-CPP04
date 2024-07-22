@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 12:45:45 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 19:56:15 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:13:16 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class	Dog : public Animal {
 
 	private:
 
-		std::string	type;
 		Brain*		brain;
 
 	public:

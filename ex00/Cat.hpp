@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 13:39:30 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 14:31:09 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:12:37 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 # include "Animal.hpp"
 
 class	Cat : public Animal {
-
-	private:
-
-		std::string	type;
 
 	public:
 

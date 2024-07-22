@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 16:26:07 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 19:16:52 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:13:52 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,7 @@ Brain::Brain(const Brain& src) {
 Brain&	Brain::operator=(const Brain& src) {
 	std::cout << "Brain copy assignment operator called" << std::endl;
 	if (this->ideas) {
-		delete this->ideas;
+		delete[] this->ideas;
 		this->ideas = new std::string[100];
 	}
 	for (int i = 0; i < 100; i++)

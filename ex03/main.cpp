@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 13:26:04 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/22 18:48:09 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:20:13 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -233,6 +233,6 @@ int	main() {
 			}
 		}
 	}
-	std::cout << GREEN "All tests done" NONE << std::endl;
+	std::cout << std::endl << GREEN "All tests done" NONE << std::endl << std::endl;
 	return 0;
 }

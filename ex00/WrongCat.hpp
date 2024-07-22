@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 14:20:45 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 14:31:49 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:12:58 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 # include "WrongAnimal.hpp"
 
 class	WrongCat : public WrongAnimal {
-
-	private:
-
-		std::string	type;
 
 	public:
 

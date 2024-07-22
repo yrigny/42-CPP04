@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 13:39:30 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/18 18:50:21 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:13:11 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class	Cat : public Animal {
 
 	private:
 
-		std::string	type;
 		Brain*		brain;
 
 	public:

@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 15:45:02 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/22 16:35:10 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/22 23:16:45 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,5 @@ class	Character : public ICharacter {
 		void				dropMateria(AMateria* object);
 		void				dropMateria(int idx);
 };
-
-
 
 #endif
